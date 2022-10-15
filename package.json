@@ -1,0 +1,24 @@
+{
+  "name": "notflix-unsplash-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CastelloDev/notflix-unsplash-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CastelloDev/notflix-unsplash-proxy/issues"
+  },
+  "homepage": "https://github.com/CastelloDev/notflix-unsplash-proxy#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-http-proxy": "^1.6.3"
+  }
+}
