@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  notflix-unsplash-proxy:
+    image: notflix-unsplash-proxy
+    environment:
+      - UNSPLASH_ACCESS_KEY=${UNSPLASH_ACCESS_KEY}
+    ports:
+      - "8080:8080"
+    container_name: notflix-unsplash-proxy
