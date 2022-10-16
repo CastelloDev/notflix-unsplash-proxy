@@ -19,6 +19,10 @@ const proxy = expressHttpProxy(unsplashURL, {
       (parts.length ? `&${parts[1]}` : "")
     );
   },
+  proxyReqOptDecorator: function (proxyReqOpts, srcReq) {
+    proxyReqOpts.headers = { "Accept-Version": "v1" };
+    return proxyReqOpts;
+  },
 });
 
 app.use("/", proxy);
